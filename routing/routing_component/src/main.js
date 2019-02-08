@@ -1,11 +1,12 @@
+//main.js (Entry Point)
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+Vue.config.productionTip = false
 
-// 루트 인스턴스
 new Vue({
   el: '#app',
   router,
-  render: h => h(App)
+  render: h => h(App),
 })
